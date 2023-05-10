@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Glorious Rotating Caterpillar</title>
+    <title>Hola Online Learning</title>
     <meta property="og:title" content="Glorious Rotating Caterpillar" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
-
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
+    <link rel="stylesheet" href="./style.css" />
+    
     <style data-tag="default-style-sheet">
       html {
         font-family: Inter;
@@ -35,59 +33,130 @@
     />
     <!--This is the head section-->
     <!-- <style> ... </style> -->
+    <style data-section-id="dropdown">
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div>
-      <link href="./sign-up.css" rel="stylesheet" />
+      <link href="./sign-in.css" rel="stylesheet" />
 
-      <div class="sign-up-container">
-        <div class="sign-up-background"></div>
-        <div class="sign-up-container1">
-          <div class="sign-up-email">
+      <div class="sign-in-container">
+        <div class="sign-in-background"></div>
+        <div class="sign-in-header">
+          <header data-role="Header" class="sign-in-header-container">
+            <div class="sign-in-image-container">
+              <img
+                alt="logo"
+                src="public/playground_assets/logo-1500h.png"
+                class="sign-in-logo"
+              />
+            </div>
+            <div class="sign-in-icon-group">
+              <div class="sign-in-menu">
+                <div data-thq="thq-dropdown" class="sign-in-menu1 list-item">
+                  <div
+                    data-thq="thq-dropdown-toggle"
+                    class="sign-in-dropdown-toggle"
+                  >
+                    <svg viewBox="0 0 1024 1024" class="sign-in-icon">
+                      <path
+                        d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <ul
+                    data-thq="thq-dropdown-list"
+                    class="sign-in-dropdown-menu"
+                  >
+                    <li data-thq="thq-dropdown" class="sign-in-home list-item">
+                      <div
+                        data-thq="thq-dropdown-toggle"
+                        class="sign-in-home-toggle"
+                      >
+                        <span class="sign-in-home1">Home</span>
+                      </div>
+                    </li>
+                    <li
+                      data-thq="thq-dropdown"
+                      class="sign-in-sign-up list-item"
+                    >
+                      <div
+                        data-thq="thq-dropdown-toggle"
+                        class="sign-in-sign-up-toggle"
+                      >
+                        <span class="sign-in-sign-up1">Sign Up</span>
+                      </div>
+                    </li>
+                    <li
+                      data-thq="thq-dropdown"
+                      class="sign-in-conjugation list-item"
+                    >
+                      <div
+                        data-thq="thq-dropdown-toggle"
+                        class="sign-in-conjugation-toggle"
+                      >
+                        <span class="sign-in-conjugation1">Conjugation</span>
+                      </div>
+                    </li>
+                    <li data-thq="thq-dropdown" class="sign-in-words list-item">
+                      <div
+                        data-thq="thq-dropdown-toggle"
+                        class="sign-in-words-toggle"
+                      >
+                        <span class="sign-in-words1">Words</span>
+                      </div>
+                    </li>
+                    <li data-thq="thq-dropdown" class="sign-in-study list-item">
+                      <div
+                        data-thq="thq-dropdown-toggle"
+                        class="sign-in-study-toggle"
+                      >
+                        <span class="sign-in-study1">Study</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sign-in-search">
+                <svg viewBox="0 0 1024 1024" class="sign-in-search1">
+                  <path
+                    d="M684.416 676.523c-1.451 1.109-2.859 2.347-4.224 3.712s-2.56 2.731-3.712 4.224c-53.675 51.755-126.677 83.541-207.147 83.541-82.475 0-157.099-33.365-211.2-87.467s-87.467-128.725-87.467-211.2 33.365-157.099 87.467-211.2 128.725-87.467 211.2-87.467 157.099 33.365 211.2 87.467 87.467 128.725 87.467 211.2c0 80.469-31.787 153.472-83.584 207.189zM926.165 865.835l-156.8-156.8c52.523-65.707 83.968-149.035 83.968-239.701 0-106.027-43.008-202.069-112.469-271.531s-165.504-112.469-271.531-112.469-202.069 43.008-271.531 112.469-112.469 165.504-112.469 271.531 43.008 202.069 112.469 271.531 165.504 112.469 271.531 112.469c90.667 0 173.995-31.445 239.701-83.968l156.8 156.8c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="sign-in-container1">
+          <div class="sign-in-email">
             <input
               type="text"
               name="email"
               placeholder="E-mail"
               autocomplete="email"
-              class="input sign-up-email1"
+              class="input sign-in-email1"
             />
           </div>
-          <div class="sign-up-container2">
+          <div class="sign-in-container2">
             <input
               type="text"
               name="password"
               placeholder="Password"
               autocomplete="off"
-              class="input sign-up-password"
+              class="input sign-in-password"
             />
           </div>
-          <div class="sign-up-container3">
-            <button class="button sign-up-button">Sign In</button>
+          <div class="sign-in-container3">
+            <button class="button sign-in-button">Sign In</button>
           </div>
-        </div>
-        <div class="sign-up-container4">
-          <header data-role="Header" class="sign-up-header">
-            <img
-              alt="logo"
-              src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
-              class="sign-up-image"
-            />
-            <div class="sign-up-icon-group">
-              <div data-role="BurgerMenu" class="sign-up-burger-menu">
-                <svg viewBox="0 0 1024 1024" class="sign-up-icon">
-                  <path
-                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                  ></path>
-                </svg>
-              </div>
-              <svg viewBox="0 0 1024 1024" class="sign-up-icon2">
-                <path
-                  d="M684.416 676.523c-1.451 1.109-2.859 2.347-4.224 3.712s-2.56 2.731-3.712 4.224c-53.675 51.755-126.677 83.541-207.147 83.541-82.475 0-157.099-33.365-211.2-87.467s-87.467-128.725-87.467-211.2 33.365-157.099 87.467-211.2 128.725-87.467 211.2-87.467 157.099 33.365 211.2 87.467 87.467 128.725 87.467 211.2c0 80.469-31.787 153.472-83.584 207.189zM926.165 865.835l-156.8-156.8c52.523-65.707 83.968-149.035 83.968-239.701 0-106.027-43.008-202.069-112.469-271.531s-165.504-112.469-271.531-112.469-202.069 43.008-271.531 112.469-112.469 165.504-112.469 271.531 43.008 202.069 112.469 271.531 165.504 112.469 271.531 112.469c90.667 0 173.995-31.445 239.701-83.968l156.8 156.8c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331z"
-                ></path>
-              </svg>
-            </div>
-          </header>
         </div>
       </div>
     </div>
