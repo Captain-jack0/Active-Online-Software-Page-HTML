@@ -6,26 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset_style.css" />
+    <link rel="stylesheet" href="./default_style.css" />
+    <script src="./action.js"></script>
+
     
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
-
-      }
-    </style>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
@@ -33,15 +18,7 @@
     />
     <!--This is the head section-->
     <!-- <style> ... </style> -->
-    <style data-section-id="dropdown">
-      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
-          display: flex;
-        }
-
-        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
-          transform: rotate(90deg);
-        }
-    </style>
+    
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -81,7 +58,7 @@
                         data-thq="thq-dropdown-toggle"
                         class="sign-in-home-toggle"
                       >
-                        <span class="sign-in-home1">Home</span>
+                        <span class="sign-in-home1" onclick="Home()">Home</span>
                       </div>
                     </li>
                     <li
@@ -92,7 +69,7 @@
                         data-thq="thq-dropdown-toggle"
                         class="sign-in-sign-up-toggle"
                       >
-                        <span class="sign-in-sign-up1">Sign Up</span>
+                        <span class="sign-in-sign-up1" onclick="SignUp()">Sign Up</span>
                       </div>
                     </li>
                     <li
