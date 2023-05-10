@@ -183,7 +183,7 @@
   flex-direction: column;
   background-size: cover;
   justify-content: center;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.1)),url("/playground_assets/home_page_bg-1000h.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.1)),  url("public/playground_assets/home_page_bg-1000h.jpg");
 }
 .home-text {
   top: 178px;
@@ -201,6 +201,7 @@
 .home-container01 {
   left: 0px;
   right: 0px;
+  top: 500px;
   width: 519px;
   bottom: 107px;
   height: 98px;
@@ -246,10 +247,11 @@
 }
 .home-text01 {
   color: var(--dl-color-gray-white);
-  font-size: 0.75rem;
+  font-size: 1rem;
   align-self: center;
   letter-spacing: 2px;
   text-transform: uppercase;
+  
 }
 .home-container02 {
   width: 100%;
@@ -258,7 +260,7 @@
   position: relative;
   align-self: stretch;
   justify-content: center;
-  background-color: rgba(19, 98, 122, 0.9);
+  background-color: rgba(193, 185, 129, 0.9);
 }
 .home-text02 {
   top: 46px;
@@ -569,6 +571,7 @@
 }
 .home-testimonial {
   width: 100%;
+  background-color: #56565f;
   display: flex;
   position: relative;
   align-items: center;
