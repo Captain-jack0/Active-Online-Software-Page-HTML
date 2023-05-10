@@ -1,33 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Glorious Rotating Caterpillar</title>
+    <title>Hola Online Learning</title>
     <meta property="og:title" content="Glorious Rotating Caterpillar" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
-
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
-
-      }
-    </style>
+    <link rel="stylesheet" href="./reset_style.css" />
+    <link rel="stylesheet" href="./default_style.css" />
+    <script src="./action.js"></script>
+   
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
@@ -35,6 +17,7 @@
     />
     <!--This is the head section-->
     <!-- <style> ... </style> -->
+    
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -43,6 +26,91 @@
 
       <div class="sign-up-container">
         <div class="sign-up-background"></div>
+        <div class="sign-up-header">
+          <header data-role="Header" class="sign-up-header-container">
+            <div class="sign-up-image-container">
+              <img
+                alt="logo"
+                src="public/playground_assets/logo-1500h.png"
+                class="sign-up-logo"
+              />
+            </div>
+            <div class="sign-up-icon-group">
+              <div class="sign-up-menu">
+                <div data-thq="thq-dropdown" class="sign-up-menu1 list-item">
+                  <div
+                    data-thq="thq-dropdown-toggle"
+                    class="sign-up-dropdown-toggle"
+                  >
+                    <svg viewBox="0 0 1024 1024" class="sign-up-icon">
+                      <path
+                        d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <ul
+                    data-thq="thq-dropdown-list"
+                    class="sign-up-dropdown-menu"
+                  >
+                    <li data-thq="thq-dropdown" class="sign-up-home list-item">
+                      <div
+                        data-thq="thq-dropdown-toggle"
+                        class="sign-up-home-toggle"
+                      >
+                        <span class="sign-up-home1" onclick="Home()">Home</span>
+                      </div>
+                    </li>
+                    <li
+                      data-thq="thq-dropdown"
+                      class="sign-up-sign-in list-item"
+                    >
+                      <div
+                        data-thq="thq-dropdown-toggle"
+                        class="sign-up-dropdown-toggle1"
+                      >
+                        <span class="sign-up-sign-in1" onclick="SignIn()">Sign In</span>
+                      </div>
+                    </li>
+                    <li
+                      data-thq="thq-dropdown"
+                      class="sign-up-conjugation list-item"
+                    >
+                      <div
+                        data-thq="thq-dropdown-toggle"
+                        class="sign-up-conjugation-toggle"
+                      >
+                        <span class="sign-up-conjugation1">Conjugation</span>
+                      </div>
+                    </li>
+                    <li data-thq="thq-dropdown" class="sign-up-words list-item">
+                      <div
+                        data-thq="thq-dropdown-toggle"
+                        class="sign-up-words-toggle"
+                      >
+                        <span class="sign-up-words1">Words</span>
+                      </div>
+                    </li>
+                    <li data-thq="thq-dropdown" class="sign-up-study list-item">
+                      <div
+                        data-thq="thq-dropdown-toggle"
+                        class="sign-up-study-toggle"
+                      >
+                        <span class="sign-up-study1">Study</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sign-up-search">
+                <svg viewBox="0 0 1024 1024" class="sign-up-search1">
+                  <path
+                    d="M684.416 676.523c-1.451 1.109-2.859 2.347-4.224 3.712s-2.56 2.731-3.712 4.224c-53.675 51.755-126.677 83.541-207.147 83.541-82.475 0-157.099-33.365-211.2-87.467s-87.467-128.725-87.467-211.2 33.365-157.099 87.467-211.2 128.725-87.467 211.2-87.467 157.099 33.365 211.2 87.467 87.467 128.725 87.467 211.2c0 80.469-31.787 153.472-83.584 207.189zM926.165 865.835l-156.8-156.8c52.523-65.707 83.968-149.035 83.968-239.701 0-106.027-43.008-202.069-112.469-271.531s-165.504-112.469-271.531-112.469-202.069 43.008-271.531 112.469-112.469 165.504-112.469 271.531 43.008 202.069 112.469 271.531 165.504 112.469 271.531 112.469c90.667 0 173.995-31.445 239.701-83.968l156.8 156.8c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </header>
+        </div>
         <div class="sign-up-container1">
           <div class="sign-up-email">
             <input
@@ -74,29 +142,6 @@
           <div class="sign-up-container3">
             <button class="button sign-up-button">Sign Up</button>
           </div>
-        </div>
-        <div class="sign-up-container4">
-          <header data-role="Header" class="sign-up-header">
-            <img
-              alt="logo"
-              src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
-              class="sign-up-image"
-            />
-            <div class="sign-up-icon-group">
-              <div data-role="BurgerMenu" class="sign-up-burger-menu">
-                <svg viewBox="0 0 1024 1024" class="sign-up-icon">
-                  <path
-                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                  ></path>
-                </svg>
-              </div>
-              <svg viewBox="0 0 1024 1024" class="sign-up-icon2">
-                <path
-                  d="M684.416 676.523c-1.451 1.109-2.859 2.347-4.224 3.712s-2.56 2.731-3.712 4.224c-53.675 51.755-126.677 83.541-207.147 83.541-82.475 0-157.099-33.365-211.2-87.467s-87.467-128.725-87.467-211.2 33.365-157.099 87.467-211.2 128.725-87.467 211.2-87.467 157.099 33.365 211.2 87.467 87.467 128.725 87.467 211.2c0 80.469-31.787 153.472-83.584 207.189zM926.165 865.835l-156.8-156.8c52.523-65.707 83.968-149.035 83.968-239.701 0-106.027-43.008-202.069-112.469-271.531s-165.504-112.469-271.531-112.469-202.069 43.008-271.531 112.469-112.469 165.504-112.469 271.531 43.008 202.069 112.469 271.531 165.504 112.469 271.531 112.469c90.667 0 173.995-31.445 239.701-83.968l156.8 156.8c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331z"
-                ></path>
-              </svg>
-            </div>
-          </header>
         </div>
       </div>
     </div>
