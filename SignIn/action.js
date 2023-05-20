@@ -5,3 +5,7 @@ function Home() {
 function SignUp() {
     window.location.href = "../SignUp/SignUp.html";
 }
+
+function MainMenu(){
+    window.location.href = "../MainMenu/main.html";
+}
