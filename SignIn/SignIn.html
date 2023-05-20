@@ -58,7 +58,7 @@
                         data-thq="thq-dropdown-toggle"
                         class="sign-in-home-toggle"
                       >
-                        <span class="sign-in-home1" onclick="Home()">Home</span>
+                        <span class="sign-in-home1" onclick="goToPage('Home/home.html')">Home</span>
                       </div>
                     </li>
                     <li
@@ -69,7 +69,7 @@
                         data-thq="thq-dropdown-toggle"
                         class="sign-in-sign-up-toggle"
                       >
-                        <span class="sign-in-sign-up1" onclick="SignUp()">Sign Up</span>
+                        <span class="sign-in-sign-up1" onclick="goToPage('SignUp/SignUp.html')">Sign Up</span>
                       </div>
                     </li>
                     <li
@@ -113,7 +113,8 @@
           </header>
         </div>
         <div class="sign-in-container1">
-          <div class="sign-in-email">
+          <form method="POST" action="http://localhost/login.php">          
+            <div class="sign-in-email">
             <input
               type="text"
               name="email"
@@ -124,15 +125,16 @@
           </div>
           <div class="sign-in-container2">
             <input
-              type="text"
+              type="password"
               name="password"
               placeholder="Password"
               autocomplete="off"
               class="input sign-in-password"
             />
           </div>
+</form>
           <div class="sign-in-container3">
-            <button class="button sign-in-button" onclick="MainMenu()">Sign In</button>
+            <button class="button sign-in-button" onclick="goToPage('MainMenu/main.html')">Sign In</button>
           </div>
         </div>
       </div>

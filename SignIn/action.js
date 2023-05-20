@@ -1,11 +1,13 @@
-function Home() {
-    window.location.href = "../Home/home.html";
-}
 
-function SignUp() {
-    window.location.href = "../SignUp/SignUp.html";
-}
+window.addEventListener('popstate', function(event) {
+    if (event.state && event.state.reloaded === true) {
+      location.reload(); // Reload the page
+    }
+  });
 
-function MainMenu(){
-    window.location.href = "../MainMenu/main.html";
-}
+  function goToPage(page) {
+    history.pushState({ reloaded: true }, '','http://localhost/SpanishLearning/'+  page);
+    location.reload(); // Reload the page immediately
+  }
+
+

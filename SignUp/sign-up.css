@@ -470,6 +470,7 @@
     align-self: flex-end;
     padding-top: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-threeunits);
+    
   }
   .sign-up-button {
     color: rgba(10, 10, 10, 0.71);

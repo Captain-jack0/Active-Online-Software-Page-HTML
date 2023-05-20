@@ -57,7 +57,7 @@
                         data-thq="thq-dropdown-toggle"
                         class="sign-up-home-toggle"
                       >
-                        <span class="sign-up-home1" onclick="Home()">Home</span>
+                        <span class="sign-up-home1" onclick="goToPage('Home/home.html')">Home</span>
                       </div>
                     </li>
                     <li
@@ -68,7 +68,7 @@
                         data-thq="thq-dropdown-toggle"
                         class="sign-up-dropdown-toggle1"
                       >
-                        <span class="sign-up-sign-in1" onclick="SignIn()">Sign In</span>
+                        <span class="sign-up-sign-in1" onclick="goToPage('SignIn/SignIn.html')">Sign In</span>
                       </div>
                     </li>
                     <li
@@ -114,6 +114,7 @@
 
         <div class="sign-up-container1" >
           <form method="POST" action="http://localhost/register.php">
+            
           <div class="sign-up-email">
         
             <input
@@ -128,26 +129,28 @@
           </div>
           <div class="sign-up-confirm-password">
             <input
-              type="text"
-              name="confirm_password"
-              placeholder="Confirm Password"
-              autocomplete="off"
-              class="input sign-up-confirmpassword1"
-            />
-          </div>
-          <div class="sign-up-container2">
-            <input
-              type="text"
+              type="password"
               name="password"required
               id="password"required
-              placeholder="password"
+              placeholder="Password"
               autocomplete="off"
               class="input sign-up-password"
             />
           </div>
+          <div class="sign-up-container2">
+            <input
+              type="password"
+              name="confirmedPassword"
+              id="confirmedPassword"
+              placeholder="Confirm Password"
+              autocomplete="off"
+              class="input sign-up-confirmpassword1"
+              
+            />
+          </div>
 
           <div class="sign-up-container3">
-            <button class="button sign-up-button" >Sign Up</button>
+            <button class="button sign-up-button" onclick="goToPage('MainMenu/main.html')" >Sign Up</button>
           </div>
 
         </div>
